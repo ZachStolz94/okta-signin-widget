@@ -15,13 +15,16 @@ import {
   DescriptionElement,
   IdxStepTransformer,
   LaunchAuthenticatorButtonElement,
+  LinkElement,
   TitleElement,
 } from '../../../types';
 import { loc } from '../../../util';
+import { SessionStorage } from '../../../util/sessionStorage';
 
 export const transformOktaVerifyFPLaunchAuthenticator: IdxStepTransformer = ({
   formBag,
   transaction,
+  widgetProps,
 }) => {
   const { uischema } = formBag;
   const { context } = transaction;
@@ -61,6 +64,27 @@ export const transformOktaVerifyFPLaunchAuthenticator: IdxStepTransformer = ({
     descriptionElement,
     launchAuthenticatorButton,
   ];
+
+  const stateTokenExists = SessionStorage.getStateHandle() || widgetProps?.stateHandle;
+
+  if (!stateTokenExists) {
+    const existingBackLink: LinkElement = uischema.elements.find(
+      (e) => e.type === 'Link' && (e as LinkElement).options.step === 'cancel',
+    ) as LinkElement;
+
+    if (!existingBackLink) {
+      const backLink: LinkElement = {
+        type: 'Link',
+        contentType: 'footer',
+        options: {
+          label: loc('goback', 'login'),
+          isActionStep: true,
+          step: 'cancel',
+        },
+      };
+      uischema.elements.push(backLink);
+    }
+  }
 
   return formBag;
 };

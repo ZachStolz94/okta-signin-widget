@@ -10,7 +10,8 @@
  * See the License for the specific language governing permissions and limitations under the License.
  */
 
-import { Box, Button as OdyButton } from '@okta/odyssey-react-mui-legacy';
+import { Box } from '@okta/odyssey-react-mui-legacy';
+import { Button as OdyButton } from '@okta/odyssey-react-mui';
 import { h } from 'preact';
 
 import { useWidgetContext } from '../../contexts';
@@ -79,24 +80,19 @@ const Button: UISchemaElementComponent<{
 
   return (
     <OdyButton
+      label={label ?? ''}
       type={type}
       variant={variant ?? 'primary'}
-      fullWidth={wide ?? true}
-      ref={focusRef}
-      disabled={loading || disabled}
-      className={classes}
-      // Fixes text overflow
-      sx={{ display: 'flex', whiteSpace: 'normal' }}
+      isFullWidth={wide ?? true}
+      ref={focusRef} //todo
+      isDisabled={loading || disabled}
       startIcon={loading ? <Spinner color="white" /> : ButtonImageIcon}
-      aria-describedby={ariaDescribedBy}
-      data-type={dataType}
-      data-se={dataSe}
-      aria-label={ariaLabel}
+      ariaDescribedBy={ariaDescribedBy}
+      testId={dataSe}
+      ariaLabel={ariaLabel}
       // eslint-disable-next-line react/jsx-props-no-spreading
       {...(type !== 'submit' && { onClick: typeof onClick === 'function' ? customClickHandler : handleClick })}
-    >
-      {label}
-    </OdyButton>
+    />
   );
 };
 

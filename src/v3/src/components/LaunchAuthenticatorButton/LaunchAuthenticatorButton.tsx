@@ -10,7 +10,8 @@
  * See the License for the specific language governing permissions and limitations under the License.
  */
 
-import { Box, Button as OdyButton } from '@okta/odyssey-react-mui-legacy';
+import { Box } from '@okta/odyssey-react-mui-legacy';
+import { Button as OdyButton } from '@okta/odyssey-react-mui';
 import { h } from 'preact';
 
 import Util from '../../../../util/Util';
@@ -76,37 +77,42 @@ const LaunchAuthenticatorButton: UISchemaElementComponent<{
   const label = getTranslation(translations, 'label');
   const iconDescription = getTranslation(translations, 'icon-description') || '';
 
+  const content = (
+    <Box
+      display="flex"
+      alignItems="center"
+      justifyContent="center"
+    >
+      <Box
+        sx={{
+          marginInlineEnd: '5px',
+          // keep the icon from stretching the button vertically
+          marginBlockEnd: '-3px',
+        }}
+      >
+        <OktaVerifyIcon
+          name="mfa-okta-verify"
+          description={iconDescription}
+          width={24}
+          height={24}
+        />
+      </Box>
+      <Box
+        whiteSpace="normal"
+      >
+        {label}
+      </Box>
+    </Box>
+  );
+
   return (
     <OdyButton
       variant="secondary"
-      fullWidth
+      isFullWidth
       onClick={handleClick}
       ref={focusRef}
-      // Fixes text overflow
-      sx={{ display: 'flex', whiteSpace: 'normal' }}
-    >
-      <Box
-        display="flex"
-        alignItems="center"
-        justifyContent="center"
-      >
-        <Box
-          sx={{
-            marginInlineEnd: '5px',
-            // keep the icon from stretching the button vertically
-            marginBlockEnd: '-3px',
-          }}
-        >
-          <OktaVerifyIcon
-            name="mfa-okta-verify"
-            description={iconDescription}
-            width={24}
-            height={24}
-          />
-        </Box>
-        {label}
-      </Box>
-    </OdyButton>
+      label={content as any} //todo
+    />
   );
 };
 

@@ -30,7 +30,11 @@ export function useAutoFocus<T extends InteractiveElement>(
   const inputRef = useRef<T>(null);
   useEffect(() => {
     if (autoFocus && focus && inputRef.current) {
-      inputRef.current.focus();
+      if (inputRef.current?.focus) {
+        inputRef.current.focus();
+      } else if ((inputRef.current as any).base) { //todo
+        (inputRef.current as any).base.focus?.();
+      }
     }
   }, [autoFocus, focus]);
   return inputRef;

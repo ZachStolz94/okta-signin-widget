@@ -10,7 +10,7 @@
  * See the License for the specific language governing permissions and limitations under the License.
  */
 
-import { Button } from '@okta/odyssey-react-mui-legacy';
+import { Button } from '@okta/odyssey-react-mui';
 import { h } from 'preact';
 
 import { useStepperContext, useWidgetContext } from '../../contexts';
@@ -50,16 +50,12 @@ const StepperButton: UISchemaElementComponent<{
       onClick={handleClick}
       variant={variant ?? 'primary'}
       type={type ?? 'button'}
-      fullWidth
+      isFullWidth
       ref={focusRef}
-      sx={{
-        whiteSpace: 'normal',
-      }}
-      startIcon={loading && <Spinner color="white" />}
-      aria-describedby={ariaDescribedBy}
-    >
-      {label}
-    </Button>
+      startIcon={loading && <Spinner />} //todo: ask Alex abould color, white is not visible by default
+      ariaDescribedBy={ariaDescribedBy}
+      label={label} //todo: long text (whiteSpace="normal")
+    />
   );
 };
 

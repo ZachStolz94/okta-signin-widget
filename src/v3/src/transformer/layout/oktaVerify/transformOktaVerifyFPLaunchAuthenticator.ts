@@ -19,7 +19,7 @@ import {
   TitleElement,
 } from '../../../types';
 import { loc } from '../../../util';
-import { SessionStorage } from '../../../util/sessionStorage';
+import { getCookieUserAuthenticated } from '../../../util/cookieUtils';
 
 export const transformOktaVerifyFPLaunchAuthenticator: IdxStepTransformer = ({
   formBag,
@@ -65,9 +65,7 @@ export const transformOktaVerifyFPLaunchAuthenticator: IdxStepTransformer = ({
     launchAuthenticatorButton,
   ];
 
-  const stateTokenExists = SessionStorage.getStateHandle() || widgetProps?.stateHandle;
-
-  if (!stateTokenExists) {
+  if (!getCookieUserAuthenticated()) {
     const existingBackLink: LinkElement = uischema.elements.find(
       (e) => e.type === 'Link' && (e as LinkElement).options.step === 'cancel',
     ) as LinkElement;

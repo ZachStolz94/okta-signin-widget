@@ -15,6 +15,12 @@ const mock = RequestMock()
 fixture('Sign in with Okta Verify is required')
   .requestHooks(logger, mock);
 
+const baseConfig = {
+  features: {
+    rememberMe: true
+  }
+};
+
 const rerenderWidget = ClientFunction((settings) => {
   window.renderPlaygroundWidget(settings);
 });
@@ -27,16 +33,20 @@ async function setup(t) {
   return signInDevicePageObject;
 }
 
-async function setupWithStateHandle(t, stateHandle) {
+async function setupWithSession(t, authenticated) {
   const signInDevicePage = new SignInDevicePageObject(t);
   await signInDevicePage.navigateToPage({ render: false });
-  await rerenderWidget({ stateHandle: stateHandle });
+  if (authenticated) {
+    await t.setCookies({name: 'isuauth', value: '1', httpOnly: false, path: '/'});
+  }
+
+  await rerenderWidget(baseConfig);
   await checkA11y(t);
   return signInDevicePage;
 }
 
-test.requestHooks(mock)('does show the back button when state token is not set', async t => {
-  const signInDevicePage = await setupWithStateHandle(t, null);
+test.requestHooks(mock)('does show the back button when session is not set', async t => {
+  const signInDevicePage = await setupWithSession(t, false);
 
   await t.expect(signInDevicePage.formExists()).ok();
   await t.expect(signInDevicePage.form.getTitle()).eql('Sign In');
@@ -46,8 +56,8 @@ test.requestHooks(mock)('does show the back button when state token is not set',
   await t.expect(signInDevicePage.getSignoutLinkText()).eql('Back to sign in');
 });
 
-test.requestHooks(mock)('does not show the back button when state token is set', async t => {
-  const signInDevicePage = await setupWithStateHandle(t, 'handle1');
+test.requestHooks(mock)('does not show the back button session is set', async t => {
+  const signInDevicePage = await setupWithSession(t, true);
 
   await t.expect(signInDevicePage.formExists()).ok();
   await t.expect(signInDevicePage.form.getTitle()).eql('Sign In');
@@ -76,7 +86,7 @@ test.requestHooks(mock)('clicking the launch Okta Verify button takes user to th
 });
 
 test('shows the correct footer links', async t => {
-  const signInDevicePage = await setupWithStateHandle(t, 'handle1');
+  const signInDevicePage = await setupWithSession(t, true);
 
   await t.expect(signInDevicePage.getEnrollFooterLink().exists).eql(true);
   await t.expect(signInDevicePage.getHelpLink().exists).eql(true);

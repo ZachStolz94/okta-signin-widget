@@ -107,7 +107,7 @@ const getPIVButtonElement = (
       type: ButtonType.BUTTON,
       step: IDX_STEP.PIV_IDP,
       dataSe: 'piv-card-button',
-      //classes: `${piv?.className || ''} piv-button`, //todo: not supported, check monolith tests
+      classes: `${piv?.className || ''} piv-button`, //todo: not supported, check monolith tests
       variant: 'secondary',
       Icon: SmartCardIconSvg,
       iconAlt: loc('piv.card', 'login'),

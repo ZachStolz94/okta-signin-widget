@@ -88,7 +88,7 @@ const Button: UISchemaElementComponent<{
       isDisabled={loading || disabled}
       startIcon={loading ? <Spinner color="white" /> : ButtonImageIcon}
       ariaDescribedBy={ariaDescribedBy}
-      testId={dataType}
+      testId={dataSe ?? dataType}
       ariaLabel={ariaLabel}
       // eslint-disable-next-line react/jsx-props-no-spreading
       {...(type !== 'submit' && { onClick: typeof onClick === 'function' ? customClickHandler : handleClick })}

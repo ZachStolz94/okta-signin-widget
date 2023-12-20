@@ -11,6 +11,7 @@ const CUSTOM_BUTTON = userVariables.gen3 ? '[data-se="custom-button"]' : '.custo
 const SUB_LABEL_SELECTOR = '.o-form-explain';
 const IDPS_CONTAINER = '.okta-idps-container';
 const FOOTER_INFO_SELECTOR = userVariables.gen3 ? '[data-se="signup-info"]' : '.footer-info';
+const SOCIAL_AUTH_BUTTON = userVariables.gen3 ? '[data-se="piv-card-button"]' : '.social-auth-button';
 
 export default class IdentityPageObject extends BasePageObject {
   constructor(t) {
@@ -123,7 +124,7 @@ export default class IdentityPageObject extends BasePageObject {
   }
 
   async waitForSocialAuthButtons() {
-    return await Selector('.social-auth-button').visible;
+    return await Selector(SOCIAL_AUTH_BUTTON).visible;
   }
 
   waitForIdentifierError() {

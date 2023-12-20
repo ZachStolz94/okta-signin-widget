@@ -78,7 +78,8 @@ export const getCustomButtonElements = (widgetProps: WidgetProps): ButtonElement
         type: ButtonType.BUTTON,
         step: '',
         dataSe: customButton.dataAttr ?? 'custom-button',
-        //classes: classNames(customButton.className, 'default-custom-button'), //todo: not supported, add to readme
+        //todo: not supported, add to readme
+        classes: classNames(customButton.className, 'default-custom-button'),
         variant: 'secondary',
         onClick: customButton.click,
       },
@@ -106,7 +107,7 @@ const getPIVButtonElement = (
       type: ButtonType.BUTTON,
       step: IDX_STEP.PIV_IDP,
       dataSe: 'piv-card-button',
-      classes: `${piv?.className || ''} piv-button`,
+      //classes: `${piv?.className || ''} piv-button`, //todo: not supported, check monolith tests
       variant: 'secondary',
       Icon: SmartCardIconSvg,
       iconAlt: loc('piv.card', 'login'),
@@ -253,6 +254,7 @@ export const getIdpButtonElements = (
         type: ButtonType.BUTTON,
         step: IDX_STEP.PIV_IDP,
         dataSe: 'piv-card-button',
+        //todo: not supported, check monolith tests
         classes: classNames(
           'social-auth-button',
           `social-auth-${type}-button`,

@@ -338,7 +338,7 @@ exports[`authenticator-enroll-security-question custom question fails client sid
                       >
                         <button
                           class="MuiButtonBase-root MuiButton-root MuiButton-primary MuiButton-primaryPrimary MuiButton-sizeMedium MuiButton-primarySizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButton-root MuiButton-primary MuiButton-primaryPrimary MuiButton-sizeMedium MuiButton-primarySizeMedium MuiButton-disableElevation MuiButton-fullWidth emotion-56"
-                          data-type="save"
+                          data-se="save"
                           tabindex="0"
                           type="submit"
                         >
@@ -665,7 +665,7 @@ exports[`authenticator-enroll-security-question custom question renders correct 
                       >
                         <button
                           class="MuiButtonBase-root MuiButton-root MuiButton-primary MuiButton-primaryPrimary MuiButton-sizeMedium MuiButton-primarySizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButton-root MuiButton-primary MuiButton-primaryPrimary MuiButton-sizeMedium MuiButton-primarySizeMedium MuiButton-disableElevation MuiButton-fullWidth emotion-47"
-                          data-type="save"
+                          data-se="save"
                           tabindex="0"
                           type="submit"
                         >
@@ -1107,7 +1107,7 @@ exports[`authenticator-enroll-security-question predefined question renders corr
                       >
                         <button
                           class="MuiButtonBase-root MuiButton-root MuiButton-primary MuiButton-primaryPrimary MuiButton-sizeMedium MuiButton-primarySizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButton-root MuiButton-primary MuiButton-primaryPrimary MuiButton-sizeMedium MuiButton-primarySizeMedium MuiButton-disableElevation MuiButton-fullWidth emotion-48"
-                          data-type="save"
+                          data-se="save"
                           tabindex="0"
                           type="submit"
                         >
@@ -1549,7 +1549,7 @@ exports[`authenticator-enroll-security-question predefined question should rende
                       >
                         <button
                           class="MuiButtonBase-root MuiButton-root MuiButton-primary MuiButton-primaryPrimary MuiButton-sizeMedium MuiButton-primarySizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButton-root MuiButton-primary MuiButton-primaryPrimary MuiButton-sizeMedium MuiButton-primarySizeMedium MuiButton-disableElevation MuiButton-fullWidth emotion-48"
-                          data-type="save"
+                          data-se="save"
                           tabindex="0"
                           type="submit"
                         >

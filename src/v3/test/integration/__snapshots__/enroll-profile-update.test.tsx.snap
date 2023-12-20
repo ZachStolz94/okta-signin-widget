@@ -255,7 +255,7 @@ exports[`enroll-profile-update fails client side validation with empty required 
                     >
                       <button
                         class="MuiButtonBase-root MuiButton-root MuiButton-primary MuiButton-primaryPrimary MuiButton-sizeMedium MuiButton-primarySizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButton-root MuiButton-primary MuiButton-primaryPrimary MuiButton-sizeMedium MuiButton-primarySizeMedium MuiButton-disableElevation MuiButton-fullWidth emotion-47"
-                        data-type="save"
+                        data-se="save"
                         tabindex="0"
                         type="submit"
                       >
@@ -461,7 +461,7 @@ exports[`enroll-profile-update should render form 1`] = `
                     >
                       <button
                         class="MuiButtonBase-root MuiButton-root MuiButton-primary MuiButton-primaryPrimary MuiButton-sizeMedium MuiButton-primarySizeMedium MuiButton-disableElevation MuiButton-fullWidth MuiButton-root MuiButton-primary MuiButton-primaryPrimary MuiButton-sizeMedium MuiButton-primarySizeMedium MuiButton-disableElevation MuiButton-fullWidth emotion-36"
-                        data-type="save"
+                        data-se="save"
                         tabindex="0"
                         type="submit"
                       >

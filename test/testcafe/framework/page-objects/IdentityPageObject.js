@@ -7,7 +7,7 @@ const CALLOUT_SELECTOR = '[data-se="callout"]';
 const NEEDHELP_SELECTOR = 'a[data-se="help"]';
 const FORGOT_PASSWORD_SELECTOR = '[data-se="forgot-password"]';
 const CUSTOM_HELP_LINKS_SELECTOR = '.auth-footer .js-custom';
-const CUSTOM_BUTTON = '.custom-buttons .okta-custom-buttons-container .default-custom-button';
+const CUSTOM_BUTTON = userVariables.gen3 ? '[data-se="custom-button"]' : '.custom-buttons .okta-custom-buttons-container .default-custom-button';
 const SUB_LABEL_SELECTOR = '.o-form-explain';
 const IDPS_CONTAINER = '.okta-idps-container';
 const FOOTER_INFO_SELECTOR = userVariables.gen3 ? '[data-se="signup-info"]' : '.footer-info';
@@ -235,9 +235,6 @@ export default class IdentityPageObject extends BasePageObject {
   }
 
   getCustomButton(index) {
-    if(userVariables.gen3) {
-      return Selector('.default-custom-button').nth(index);
-    }
     return Selector(CUSTOM_BUTTON).nth(index);
   }
 

@@ -77,8 +77,8 @@ export const getCustomButtonElements = (widgetProps: WidgetProps): ButtonElement
       options: {
         type: ButtonType.BUTTON,
         step: '',
-        dataSe: customButton.dataAttr,
-        classes: classNames(customButton.className, 'default-custom-button'),
+        dataSe: customButton.dataAttr ?? 'custom-button',
+        //classes: classNames(customButton.className, 'default-custom-button'), //todo: not supported, add to readme
         variant: 'secondary',
         onClick: customButton.click,
       },

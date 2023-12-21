@@ -36,7 +36,8 @@ import {
   getBackToSignInUri,
   getBaseUrl,
   isOauth2Enabled,
-  loc, removeUserAuthenticatedCookie,
+  loc,
+  removeUserAuthenticatedCookie,
   SessionStorage,
   shouldShowCancelLink,
 } from '../../util';

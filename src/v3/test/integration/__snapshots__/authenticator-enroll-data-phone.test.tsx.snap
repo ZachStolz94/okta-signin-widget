@@ -95,13 +95,15 @@ exports[`authenticator-enroll-data-phone should render form 1`] = `
                       class="MuiBox-root emotion-12"
                     >
                       <div
-                        class="identifier-container MuiBox-root emotion-13"
+                        class="identifier-container no-translate MuiBox-root emotion-13"
+                        title="tester13@test.com"
                       >
                         <div
-                          class="MuiBox-root emotion-14"
+                          class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault emotion-14"
+                          data-se="identifier"
                         >
-                          <span
-                            class="MuiBox-root emotion-15"
+                          <div
+                            class="MuiChip-icon MuiChip-iconMedium MuiChip-iconColorDefault MuiBox-root emotion-15"
                           >
                             <svg
                               class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit emotion-16"
@@ -121,12 +123,9 @@ exports[`authenticator-enroll-data-phone should render form 1`] = `
                                 User
                               </title>
                             </svg>
-                          </span>
+                          </div>
                           <span
-                            aria-label="tester13@test.com"
-                            class="identifier no-translate MuiBox-root emotion-17"
-                            data-se="identifier"
-                            title="tester13@test.com"
+                            class="MuiChip-label MuiChip-labelMedium emotion-17"
                           >
                             tester13@test.com
                           </span>
@@ -1655,13 +1654,15 @@ exports[`authenticator-enroll-data-phone should render form without an autoFocus
                       class="MuiBox-root emotion-12"
                     >
                       <div
-                        class="identifier-container MuiBox-root emotion-13"
+                        class="identifier-container no-translate MuiBox-root emotion-13"
+                        title="tester13@test.com"
                       >
                         <div
-                          class="MuiBox-root emotion-14"
+                          class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault emotion-14"
+                          data-se="identifier"
                         >
-                          <span
-                            class="MuiBox-root emotion-15"
+                          <div
+                            class="MuiChip-icon MuiChip-iconMedium MuiChip-iconColorDefault MuiBox-root emotion-15"
                           >
                             <svg
                               class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit emotion-16"
@@ -1681,12 +1682,9 @@ exports[`authenticator-enroll-data-phone should render form without an autoFocus
                                 User
                               </title>
                             </svg>
-                          </span>
+                          </div>
                           <span
-                            aria-label="tester13@test.com"
-                            class="identifier no-translate MuiBox-root emotion-17"
-                            data-se="identifier"
-                            title="tester13@test.com"
+                            class="MuiChip-label MuiChip-labelMedium emotion-17"
                           >
                             tester13@test.com
                           </span>
@@ -3215,13 +3213,15 @@ exports[`authenticator-enroll-data-phone should send correct payload when select
                       class="MuiBox-root emotion-12"
                     >
                       <div
-                        class="identifier-container MuiBox-root emotion-13"
+                        class="identifier-container no-translate MuiBox-root emotion-13"
+                        title="tester13@test.com"
                       >
                         <div
-                          class="MuiBox-root emotion-14"
+                          class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault emotion-14"
+                          data-se="identifier"
                         >
-                          <span
-                            class="MuiBox-root emotion-15"
+                          <div
+                            class="MuiChip-icon MuiChip-iconMedium MuiChip-iconColorDefault MuiBox-root emotion-15"
                           >
                             <svg
                               class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit emotion-16"
@@ -3241,12 +3241,9 @@ exports[`authenticator-enroll-data-phone should send correct payload when select
                                 User
                               </title>
                             </svg>
-                          </span>
+                          </div>
                           <span
-                            aria-label="tester13@test.com"
-                            class="identifier no-translate MuiBox-root emotion-17"
-                            data-se="identifier"
-                            title="tester13@test.com"
+                            class="MuiChip-label MuiChip-labelMedium emotion-17"
                           >
                             tester13@test.com
                           </span>

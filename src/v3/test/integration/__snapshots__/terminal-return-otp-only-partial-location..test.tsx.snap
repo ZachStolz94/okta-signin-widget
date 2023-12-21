@@ -85,13 +85,15 @@ exports[`terminal-return-otp-only-partial-location renders form 1`] = `
                       class="MuiBox-root emotion-12"
                     >
                       <div
-                        class="identifier-container MuiBox-root emotion-13"
+                        class="identifier-container no-translate MuiBox-root emotion-13"
+                        title="test@okta.com"
                       >
                         <div
-                          class="MuiBox-root emotion-14"
+                          class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault emotion-14"
+                          data-se="identifier"
                         >
-                          <span
-                            class="MuiBox-root emotion-15"
+                          <div
+                            class="MuiChip-icon MuiChip-iconMedium MuiChip-iconColorDefault MuiBox-root emotion-15"
                           >
                             <svg
                               class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit emotion-16"
@@ -111,12 +113,9 @@ exports[`terminal-return-otp-only-partial-location renders form 1`] = `
                                 User
                               </title>
                             </svg>
-                          </span>
+                          </div>
                           <span
-                            aria-label="test@okta.com"
-                            class="identifier no-translate MuiBox-root emotion-17"
-                            data-se="identifier"
-                            title="test@okta.com"
+                            class="MuiChip-label MuiChip-labelMedium emotion-17"
                           >
                             test@okta.com
                           </span>
@@ -193,7 +192,7 @@ exports[`terminal-return-otp-only-partial-location renders form 1`] = `
                         >
                           <svg
                             aria-hidden="true"
-                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit emotion-33"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit emotion-16"
                             fill="none"
                             focusable="false"
                             role="img"
@@ -236,7 +235,7 @@ exports[`terminal-return-otp-only-partial-location renders form 1`] = `
                         >
                           <svg
                             aria-hidden="true"
-                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit emotion-33"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit emotion-16"
                             fill="none"
                             focusable="false"
                             role="img"
@@ -279,7 +278,7 @@ exports[`terminal-return-otp-only-partial-location renders form 1`] = `
                         >
                           <svg
                             aria-hidden="true"
-                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit emotion-33"
+                            class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit emotion-16"
                             fill="none"
                             focusable="false"
                             role="img"

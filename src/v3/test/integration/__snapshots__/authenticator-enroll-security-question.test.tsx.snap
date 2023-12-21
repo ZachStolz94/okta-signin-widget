@@ -127,13 +127,15 @@ exports[`authenticator-enroll-security-question custom question fails client sid
                       class="MuiBox-root emotion-19"
                     >
                       <div
-                        class="identifier-container MuiBox-root emotion-20"
+                        class="identifier-container no-translate MuiBox-root emotion-20"
+                        title="tester14@test.com"
                       >
                         <div
-                          class="MuiBox-root emotion-21"
+                          class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault emotion-21"
+                          data-se="identifier"
                         >
-                          <span
-                            class="MuiBox-root emotion-22"
+                          <div
+                            class="MuiChip-icon MuiChip-iconMedium MuiChip-iconColorDefault MuiBox-root emotion-22"
                           >
                             <svg
                               class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit emotion-23"
@@ -153,12 +155,9 @@ exports[`authenticator-enroll-security-question custom question fails client sid
                                 User
                               </title>
                             </svg>
-                          </span>
+                          </div>
                           <span
-                            aria-label="tester14@test.com"
-                            class="identifier no-translate MuiBox-root emotion-24"
-                            data-se="identifier"
-                            title="tester14@test.com"
+                            class="MuiChip-label MuiChip-labelMedium emotion-24"
                           >
                             tester14@test.com
                           </span>
@@ -467,13 +466,15 @@ exports[`authenticator-enroll-security-question custom question renders correct 
                       class="MuiBox-root emotion-12"
                     >
                       <div
-                        class="identifier-container MuiBox-root emotion-13"
+                        class="identifier-container no-translate MuiBox-root emotion-13"
+                        title="tester14@test.com"
                       >
                         <div
-                          class="MuiBox-root emotion-14"
+                          class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault emotion-14"
+                          data-se="identifier"
                         >
-                          <span
-                            class="MuiBox-root emotion-15"
+                          <div
+                            class="MuiChip-icon MuiChip-iconMedium MuiChip-iconColorDefault MuiBox-root emotion-15"
                           >
                             <svg
                               class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit emotion-16"
@@ -493,12 +494,9 @@ exports[`authenticator-enroll-security-question custom question renders correct 
                                 User
                               </title>
                             </svg>
-                          </span>
+                          </div>
                           <span
-                            aria-label="tester14@test.com"
-                            class="identifier no-translate MuiBox-root emotion-17"
-                            data-se="identifier"
-                            title="tester14@test.com"
+                            class="MuiChip-label MuiChip-labelMedium emotion-17"
                           >
                             tester14@test.com
                           </span>
@@ -794,13 +792,15 @@ exports[`authenticator-enroll-security-question predefined question renders corr
                       class="MuiBox-root emotion-12"
                     >
                       <div
-                        class="identifier-container MuiBox-root emotion-13"
+                        class="identifier-container no-translate MuiBox-root emotion-13"
+                        title="tester14@test.com"
                       >
                         <div
-                          class="MuiBox-root emotion-14"
+                          class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault emotion-14"
+                          data-se="identifier"
                         >
-                          <span
-                            class="MuiBox-root emotion-15"
+                          <div
+                            class="MuiChip-icon MuiChip-iconMedium MuiChip-iconColorDefault MuiBox-root emotion-15"
                           >
                             <svg
                               class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit emotion-16"
@@ -820,12 +820,9 @@ exports[`authenticator-enroll-security-question predefined question renders corr
                                 User
                               </title>
                             </svg>
-                          </span>
+                          </div>
                           <span
-                            aria-label="tester14@test.com"
-                            class="identifier no-translate MuiBox-root emotion-17"
-                            data-se="identifier"
-                            title="tester14@test.com"
+                            class="MuiChip-label MuiChip-labelMedium emotion-17"
                           >
                             tester14@test.com
                           </span>
@@ -1236,13 +1233,15 @@ exports[`authenticator-enroll-security-question predefined question should rende
                       class="MuiBox-root emotion-12"
                     >
                       <div
-                        class="identifier-container MuiBox-root emotion-13"
+                        class="identifier-container no-translate MuiBox-root emotion-13"
+                        title="tester14@test.com"
                       >
                         <div
-                          class="MuiBox-root emotion-14"
+                          class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault emotion-14"
+                          data-se="identifier"
                         >
-                          <span
-                            class="MuiBox-root emotion-15"
+                          <div
+                            class="MuiChip-icon MuiChip-iconMedium MuiChip-iconColorDefault MuiBox-root emotion-15"
                           >
                             <svg
                               class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit emotion-16"
@@ -1262,12 +1261,9 @@ exports[`authenticator-enroll-security-question predefined question should rende
                                 User
                               </title>
                             </svg>
-                          </span>
+                          </div>
                           <span
-                            aria-label="tester14@test.com"
-                            class="identifier no-translate MuiBox-root emotion-17"
-                            data-se="identifier"
-                            title="tester14@test.com"
+                            class="MuiChip-label MuiChip-labelMedium emotion-17"
                           >
                             tester14@test.com
                           </span>

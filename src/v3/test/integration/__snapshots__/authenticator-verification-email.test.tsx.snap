@@ -85,13 +85,15 @@ exports[`Email authenticator verification when email magic link = undefined rend
                       class="MuiBox-root emotion-12"
                     >
                       <div
-                        class="identifier-container MuiBox-root emotion-13"
+                        class="identifier-container no-translate MuiBox-root emotion-13"
+                        title="firstname.lastname@example.com"
                       >
                         <div
-                          class="MuiBox-root emotion-14"
+                          class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault emotion-14"
+                          data-se="identifier"
                         >
-                          <span
-                            class="MuiBox-root emotion-15"
+                          <div
+                            class="MuiChip-icon MuiChip-iconMedium MuiChip-iconColorDefault MuiBox-root emotion-15"
                           >
                             <svg
                               class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit emotion-16"
@@ -111,12 +113,9 @@ exports[`Email authenticator verification when email magic link = undefined rend
                                 User
                               </title>
                             </svg>
-                          </span>
+                          </div>
                           <span
-                            aria-label="firstname.lastname@example.com"
-                            class="identifier no-translate MuiBox-root emotion-17"
-                            data-se="identifier"
-                            title="firstname.lastname@example.com"
+                            class="MuiChip-label MuiChip-labelMedium emotion-17"
                           >
                             firstname.lastname@example.com
                           </span>
@@ -287,13 +286,15 @@ exports[`Email authenticator verification when email magic link = undefined rend
                       class="MuiBox-root emotion-12"
                     >
                       <div
-                        class="identifier-container MuiBox-root emotion-13"
+                        class="identifier-container no-translate MuiBox-root emotion-13"
+                        title="firstname.lastname@example.com"
                       >
                         <div
-                          class="MuiBox-root emotion-14"
+                          class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault emotion-14"
+                          data-se="identifier"
                         >
-                          <span
-                            class="MuiBox-root emotion-15"
+                          <div
+                            class="MuiChip-icon MuiChip-iconMedium MuiChip-iconColorDefault MuiBox-root emotion-15"
                           >
                             <svg
                               class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit emotion-16"
@@ -313,12 +314,9 @@ exports[`Email authenticator verification when email magic link = undefined rend
                                 User
                               </title>
                             </svg>
-                          </span>
+                          </div>
                           <span
-                            aria-label="firstname.lastname@example.com"
-                            class="identifier no-translate MuiBox-root emotion-17"
-                            data-se="identifier"
-                            title="firstname.lastname@example.com"
+                            class="MuiChip-label MuiChip-labelMedium emotion-17"
                           >
                             firstname.lastname@example.com
                           </span>
@@ -542,13 +540,15 @@ exports[`Email authenticator verification when email magic link = undefined rend
                       class="MuiBox-root emotion-12"
                     >
                       <div
-                        class="identifier-container MuiBox-root emotion-13"
+                        class="identifier-container no-translate MuiBox-root emotion-13"
+                        title="firstname.lastname@example.com"
                       >
                         <div
-                          class="MuiBox-root emotion-14"
+                          class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault emotion-14"
+                          data-se="identifier"
                         >
-                          <span
-                            class="MuiBox-root emotion-15"
+                          <div
+                            class="MuiChip-icon MuiChip-iconMedium MuiChip-iconColorDefault MuiBox-root emotion-15"
                           >
                             <svg
                               class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit emotion-16"
@@ -568,12 +568,9 @@ exports[`Email authenticator verification when email magic link = undefined rend
                                 User
                               </title>
                             </svg>
-                          </span>
+                          </div>
                           <span
-                            aria-label="firstname.lastname@example.com"
-                            class="identifier no-translate MuiBox-root emotion-17"
-                            data-se="identifier"
-                            title="firstname.lastname@example.com"
+                            class="MuiChip-label MuiChip-labelMedium emotion-17"
                           >
                             firstname.lastname@example.com
                           </span>
@@ -817,13 +814,15 @@ exports[`Email authenticator verification when email magic link = undefined rend
                       class="MuiBox-root emotion-19"
                     >
                       <div
-                        class="identifier-container MuiBox-root emotion-20"
+                        class="identifier-container no-translate MuiBox-root emotion-20"
+                        title="testUser@okta.com"
                       >
                         <div
-                          class="MuiBox-root emotion-21"
+                          class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault emotion-21"
+                          data-se="identifier"
                         >
-                          <span
-                            class="MuiBox-root emotion-22"
+                          <div
+                            class="MuiChip-icon MuiChip-iconMedium MuiChip-iconColorDefault MuiBox-root emotion-22"
                           >
                             <svg
                               class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit emotion-23"
@@ -843,12 +842,9 @@ exports[`Email authenticator verification when email magic link = undefined rend
                                 User
                               </title>
                             </svg>
-                          </span>
+                          </div>
                           <span
-                            aria-label="testUser@okta.com"
-                            class="identifier no-translate MuiBox-root emotion-24"
-                            data-se="identifier"
-                            title="testUser@okta.com"
+                            class="MuiChip-label MuiChip-labelMedium emotion-24"
                           >
                             testUser@okta.com
                           </span>
@@ -1117,13 +1113,15 @@ exports[`Email authenticator verification when email magic link = undefined rend
                       class="MuiBox-root emotion-19"
                     >
                       <div
-                        class="identifier-container MuiBox-root emotion-20"
+                        class="identifier-container no-translate MuiBox-root emotion-20"
+                        title="testUser@okta.com"
                       >
                         <div
-                          class="MuiBox-root emotion-21"
+                          class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault emotion-21"
+                          data-se="identifier"
                         >
-                          <span
-                            class="MuiBox-root emotion-22"
+                          <div
+                            class="MuiChip-icon MuiChip-iconMedium MuiChip-iconColorDefault MuiBox-root emotion-22"
                           >
                             <svg
                               class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit emotion-23"
@@ -1143,12 +1141,9 @@ exports[`Email authenticator verification when email magic link = undefined rend
                                 User
                               </title>
                             </svg>
-                          </span>
+                          </div>
                           <span
-                            aria-label="testUser@okta.com"
-                            class="identifier no-translate MuiBox-root emotion-24"
-                            data-se="identifier"
-                            title="testUser@okta.com"
+                            class="MuiChip-label MuiChip-labelMedium emotion-24"
                           >
                             testUser@okta.com
                           </span>
@@ -1543,13 +1538,15 @@ exports[`Email authenticator verification when email magic link = undefined shou
                       class="MuiBox-root emotion-12"
                     >
                       <div
-                        class="identifier-container MuiBox-root emotion-13"
+                        class="identifier-container no-translate MuiBox-root emotion-13"
+                        title="firstname.lastname@example.com"
                       >
                         <div
-                          class="MuiBox-root emotion-14"
+                          class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault emotion-14"
+                          data-se="identifier"
                         >
-                          <span
-                            class="MuiBox-root emotion-15"
+                          <div
+                            class="MuiChip-icon MuiChip-iconMedium MuiChip-iconColorDefault MuiBox-root emotion-15"
                           >
                             <svg
                               class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit emotion-16"
@@ -1569,12 +1566,9 @@ exports[`Email authenticator verification when email magic link = undefined shou
                                 User
                               </title>
                             </svg>
-                          </span>
+                          </div>
                           <span
-                            aria-label="firstname.lastname@example.com"
-                            class="identifier no-translate MuiBox-root emotion-17"
-                            data-se="identifier"
-                            title="firstname.lastname@example.com"
+                            class="MuiChip-label MuiChip-labelMedium emotion-17"
                           >
                             firstname.lastname@example.com
                           </span>

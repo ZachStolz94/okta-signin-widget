@@ -67,13 +67,15 @@ exports[`granular-consent-without-logo should render form 1`] = `
                       class="MuiBox-root emotion-15"
                     >
                       <div
-                        class="identifier-container MuiBox-root emotion-16"
+                        class="identifier-container no-translate MuiBox-root emotion-16"
+                        title="testUser@okta.com"
                       >
                         <div
-                          class="MuiBox-root emotion-17"
+                          class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault emotion-17"
+                          data-se="identifier"
                         >
-                          <span
-                            class="MuiBox-root emotion-18"
+                          <div
+                            class="MuiChip-icon MuiChip-iconMedium MuiChip-iconColorDefault MuiBox-root emotion-18"
                           >
                             <svg
                               class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit emotion-19"
@@ -93,12 +95,9 @@ exports[`granular-consent-without-logo should render form 1`] = `
                                 User
                               </title>
                             </svg>
-                          </span>
+                          </div>
                           <span
-                            aria-label="testUser@okta.com"
-                            class="identifier no-translate MuiBox-root emotion-20"
-                            data-se="identifier"
-                            title="testUser@okta.com"
+                            class="MuiChip-label MuiChip-labelMedium emotion-20"
                           >
                             testUser@okta.com
                           </span>

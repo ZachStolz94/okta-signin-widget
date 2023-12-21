@@ -81,13 +81,15 @@ exports[`authenticator-verification-okta-verify-totp should have autocomplete at
                       class="MuiBox-root emotion-12"
                     >
                       <div
-                        class="identifier-container MuiBox-root emotion-13"
+                        class="identifier-container no-translate MuiBox-root emotion-13"
+                        title="tester@okta1.com"
                       >
                         <div
-                          class="MuiBox-root emotion-14"
+                          class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault emotion-14"
+                          data-se="identifier"
                         >
-                          <span
-                            class="MuiBox-root emotion-15"
+                          <div
+                            class="MuiChip-icon MuiChip-iconMedium MuiChip-iconColorDefault MuiBox-root emotion-15"
                           >
                             <svg
                               class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit emotion-16"
@@ -107,12 +109,9 @@ exports[`authenticator-verification-okta-verify-totp should have autocomplete at
                                 User
                               </title>
                             </svg>
-                          </span>
+                          </div>
                           <span
-                            aria-label="tester@okta1.com"
-                            class="identifier no-translate MuiBox-root emotion-17"
-                            data-se="identifier"
-                            title="tester@okta1.com"
+                            class="MuiChip-label MuiChip-labelMedium emotion-17"
                           >
                             tester@okta1.com
                           </span>
@@ -293,13 +292,15 @@ exports[`authenticator-verification-okta-verify-totp should render form 1`] = `
                       class="MuiBox-root emotion-12"
                     >
                       <div
-                        class="identifier-container MuiBox-root emotion-13"
+                        class="identifier-container no-translate MuiBox-root emotion-13"
+                        title="tester@okta1.com"
                       >
                         <div
-                          class="MuiBox-root emotion-14"
+                          class="MuiChip-root MuiChip-filled MuiChip-sizeMedium MuiChip-colorDefault MuiChip-filledDefault emotion-14"
+                          data-se="identifier"
                         >
-                          <span
-                            class="MuiBox-root emotion-15"
+                          <div
+                            class="MuiChip-icon MuiChip-iconMedium MuiChip-iconColorDefault MuiBox-root emotion-15"
                           >
                             <svg
                               class="MuiSvgIcon-root MuiSvgIcon-fontSizeInherit emotion-16"
@@ -319,12 +320,9 @@ exports[`authenticator-verification-okta-verify-totp should render form 1`] = `
                                 User
                               </title>
                             </svg>
-                          </span>
+                          </div>
                           <span
-                            aria-label="tester@okta1.com"
-                            class="identifier no-translate MuiBox-root emotion-17"
-                            data-se="identifier"
-                            title="tester@okta1.com"
+                            class="MuiChip-label MuiChip-labelMedium emotion-17"
                           >
                             tester@okta1.com
                           </span>

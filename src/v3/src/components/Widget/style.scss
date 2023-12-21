@@ -3,10 +3,6 @@
 @use 'sass:map';
 @import '@okta/odyssey-design-tokens/dist/index.scss';
 
-html {
-  height: 100vh;
-}
-
 /* loginpage utility styles */
 .clearfix {
   display: block;

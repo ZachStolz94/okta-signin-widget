@@ -114,7 +114,6 @@ const AuthenticatorButton: UISchemaElementComponent<{
       border={1}
       borderColor="grey.200"
       borderRadius={tokens.BorderRadiusMain}
-      boxShadow={tokens.ShadowScale0}
       className="authenticator-row"
       data-se="authenticator-button"
       tabIndex={0}

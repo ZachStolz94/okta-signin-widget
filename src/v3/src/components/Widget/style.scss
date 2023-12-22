@@ -24,6 +24,34 @@
   height: inherit;
 }
 
+.auth .footer, .okta-container .applogin-banner {
+  font-family: map.get($ods-tokens, 'typography', 'family', 'body');
+
+  &:lang(el) {
+    font-family: 'Noto Sans', sans-serif;
+  }
+
+  &:lang(ja) {
+    font-family: 'Noto Sans JP', sans-serif;
+  }
+
+  &:lang(ko) {
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+  &:lang(th) {
+    font-family: 'Noto Sans Thai', sans-serif;
+  }
+
+  &:lang(zh-CN) {
+    font-family: 'Noto Sans SC', sans-serif;
+  }
+
+  &:lang(zh-TW) {
+    font-family: 'Noto Sans TC', sans-serif;
+  }
+}
+
 /* loginpage footer styles */
 .auth .footer {
   position: fixed;
@@ -37,7 +65,7 @@
   overflow: hidden;
   margin-block-start: map.get($ods-tokens, spacing, '8');
   background-color: map.get($ods-tokens, 'hue', 'neutral', '50');
-  border: map.get($ods-tokens, 'border', 'width', 'main') solid map.get($ods-tokens, 'border', 'color', 'display');
+  border-top: map.get($ods-tokens, 'border', 'width', 'main') solid map.get($ods-tokens, 'border', 'color', 'display');
   p {
     margin-block: map.get($ods-tokens, 'spacing', '3');
   }
@@ -92,7 +120,7 @@
   color: map.get($ods-tokens, 'typography', 'color', 'subordinate');
   position: relative;
   min-inline-size: 300px;
-  border: map.get($ods-tokens, 'border', 'width', 'main') solid map.get($ods-tokens, 'border', 'color', 'display');
+  border-bottom: map.get($ods-tokens, 'border', 'width', 'main') solid map.get($ods-tokens, 'border', 'color', 'display');
 }
 .okta-container .applogin-banner .applogin-background {
   background-color: #fff;

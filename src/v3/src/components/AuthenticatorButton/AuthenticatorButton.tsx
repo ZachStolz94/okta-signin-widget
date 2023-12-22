@@ -154,7 +154,8 @@ const AuthenticatorButton: UISchemaElementComponent<{
           variant="h3"
           id={`${iconName}-label`}
           sx={{
-            fontSize: '1rem',
+            fontSize: tokens.TypographySizeBody,
+            fontWeight: tokens.TypographyWeightBodyBold,
             margin: 0,
             marginBlockEnd: '6px',
             textAlign: 'start',
@@ -169,7 +170,7 @@ const AuthenticatorButton: UISchemaElementComponent<{
             paragraph
             id={`${iconName}-description`}
             sx={{
-              fontSize: '.875rem',
+              fontSize: tokens.TypographySizeSubordinate,
               margin: 0,
               marginBlockEnd: '6px',
               textAlign: 'start',
@@ -223,10 +224,9 @@ const AuthenticatorButton: UISchemaElementComponent<{
           sx={{
             display: 'flex',
             alignItems: 'center',
-            marginBlock: '5px',
+            marginBlockStart: '5px',
             marginInline: 0,
-            fontWeight: 500,
-            color: tokens.PalettePrimaryMain,
+            color: tokens.TypographyColorAction,
             '& svg': {
               marginBlock: 0,
               marginInline: '5px 0',
@@ -236,7 +236,10 @@ const AuthenticatorButton: UISchemaElementComponent<{
           <Box
             component="span"
             id={`${iconName}-ctaLabel`}
-            sx={{ fontWeight: 700, fontSize: '.875rem' }}
+            sx={{
+              fontWeight: tokens.TypographyWeightBodyBold,
+              fontSize: tokens.TypographySizeBody
+            }}
             data-se="cta-button-label"
             className="button select-factor link-button"
           >
